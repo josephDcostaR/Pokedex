@@ -2,7 +2,7 @@
 
 <p>Descrição: projeto de construção de uma pokedex web interativa onde o usuário
   vai ter a uma lista de pokemons da primeira geração, sendo que ao clicar em
-  um pokemon ele será levado para uma pagina com mais detales desse pokemon
+  um pokemon ele será levado para uma pagina com mais detales desse pokemon.
 </p>
 
 <p>Construção: O mesmo foi feito usando puramente html/css/js, e mas um normalize 
