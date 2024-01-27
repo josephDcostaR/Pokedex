@@ -10,6 +10,8 @@
   <a href="https://pokeapi.co/docs/v2">api pokemon</a> do site PokéApi.
 </p>
 
+<p>Acesse o site por esse <a href="https://josephdcostar.github.io/Pokedex/">Pokedex</a>.</p>
+
 <h2>Imagens do projeto</h2>
 
 <span>Página 1</span>
