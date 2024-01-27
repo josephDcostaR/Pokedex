@@ -1,0 +1,50 @@
+.info-pokemon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem; /* Ajuste a margem superior conforme necessário */
+    justify-content: center;
+    height: 20px;
+    margin: 0.3rem;
+}
+
+/*Status do digimon*/
+.HP, .ATK, .DEF {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 0;
+    justify-content: space-around;
+    font-weight: 400;
+    color: white;
+    margin-left: 0.7rem;
+}
+
+/* Adicionando estilos para a barra de status */
+.status-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-hp_exter,
+.p-atk_exter,
+.p-def_exter {
+    position: relative;
+    background-color: #ffffff;
+    height: 20px; /* Ajuste a altura conforme necessário */
+    width: 80%;
+    border-radius: 35px;
+    
+}
+
+.p-hp_inter,
+.p-atk_inter,
+.p-def_inter {
+    position: absolute;
+    background-color: #d8d8d8;
+    height: 100%;
+    width: 0;
+    border-radius: 35px;
+}

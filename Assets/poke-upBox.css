@@ -1,0 +1,23 @@
+.up-i img {
+    width: 50%;
+
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 18px; /* Aumente o espaçamento inferior */
+}
+
+.up-i span {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px; /* Adicione uma margem superior para o span */
+}
+
+.up-i img {
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
