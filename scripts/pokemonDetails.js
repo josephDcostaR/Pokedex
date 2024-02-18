@@ -5,8 +5,21 @@ function convertPokemonToDetailsHTML(pokemon) {
     return `
         <div class="pokemon-i">
             <div class="up-i">
+                <span >
+                <a class="btn-back" href="index.html">
+                    voltar
+                </a>
+                </span>
                 <img src="${pokemon.photo}" alt="${pokemon.name}-img">
                 <span>${pokemon.name}</span>
+
+                <div class="detail">
+                    <ol class="types">
+                        ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                    </ol>
+                </div>
+
+                
             </div>
             <div class="down-i  ${pokemon.type}" >
                 <section class="info-pokemon">

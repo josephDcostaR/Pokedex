@@ -6,12 +6,18 @@
     margin-bottom: 18px; /* Aumente o espaçamento inferior */
 }
 
+.btn-back {
+    text-decoration: none;
+    color: #333;
+}
+
 .up-i span {
     text-transform: capitalize;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     font-weight: bold;
     color: #333;
-    margin-top: 15px; /* Adicione uma margem superior para o span */
+    margin-top: 15px;
+    margin-bottom: 15px; /* Adicione uma margem superior para o span */
 }
 
 .up-i img {
@@ -19,5 +25,30 @@
     height: auto;
     border-radius: 8px;
     margin-bottom: 12px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex
+}
+
+.detail .types .type {
+    filter: brightness(1.1);
+    color: #fff;
+    padding: .800rem .30rem;
+    margin: .300rem 0;
+    font-size: .935rem;
+    border-radius: 1rem;
+    align-items: center;
+    font-family: 'Roboto';
 }
 

@@ -1,5 +1,9 @@
+
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+   
+
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Pokemon Solid', 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
