@@ -1,6 +1,4 @@
 
-
-//Faz o consumo do http e da api
 const pokeApi = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail) {
@@ -20,25 +18,35 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     stats.forEach((stat) => {
         switch (stat.stat.name) {
             case "hp":
-                pokemon.hp = stat.base_stat
+                pokemon.hp = calculatePercentage(stat.base_stat)
                 break;
             case "attack":
-                pokemon.attack = stat.base_stat;
+                pokemon.attack = calculatePercentage(stat.base_stat);
                 break;
             case "defense":
-                pokemon.defense = stat.base_stat;
+                pokemon.defense = calculatePercentage(stat.base_stat);
                 break;
         }
     })
-
     return pokemon
+}
+
+function calculatePercentage(value) {
+    const maxValue = 255;
+    const maxPercenctage = 90;
+    let percentage = (value / maxValue) * 100;
+
+    if (percentage > maxPercenctage) {
+        percentage = maxPercenctage;
+    }
+
+    return percentage;
 }
 
 pokeApi.getPokemonsDatails = (pokemon) => {
      return fetch(pokemon.url)
         .then((response) => response.json())
         .then(convertPokeApiDetailToPokemon)
-
 }
 
 pokeApi.getPokemons = (offset = 0, limit = 5) => {
@@ -50,7 +58,7 @@ pokeApi.getPokemons = (offset = 0, limit = 5) => {
         .then((pokemons) => pokemons.map(pokeApi.getPokemonsDatails))
         .then((datailRequests) => Promise.all(datailRequests))
         .then((pokemonDetails) => pokemonDetails)
-        }
+}
         
 
 

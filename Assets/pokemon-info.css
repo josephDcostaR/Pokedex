@@ -9,7 +9,7 @@
 
 body {
     background-color: #f6f8fc;
-    margin: 0; /* Removendo a margem padrão do body */
+    margin: 0;
 }
 
 .Pokemons-i {
@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    min-height: 100vh; /* Alterando para altura mínima igual à altura da viewport */
+    min-height: 100vh;
 }
 
 .pokemon-i {
@@ -51,24 +51,21 @@ body {
     flex: 1;
 }
 
-/* Adicionando estilos para a imagem do Pokémon */
+
 .up-i img {
-    max-width: 100%; /* Garantindo que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantendo a proporção da imagem */
+    max-width: 100%; 
+    height: auto; 
 }
 
-/* Adicionando estilos para o nome do Pokémon */
 .up-i span {
-    text-align: center; /* Centralizando o texto */
-    margin-top: 0.1rem; /* Adicionando um espaçamento superior para o nome */
+    text-align: center;
+    margin-top: 0.1rem; 
 }
 
-/* Adicionando estilos para a seção de informações do Pokémon */
 .down-i .info-pokemon {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-/* Adicionando estilos para as estatísticas do Pokémon */
 

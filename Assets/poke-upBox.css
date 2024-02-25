@@ -17,11 +17,11 @@
     font-weight: bold;
     color: #333;
     margin-top: 15px;
-    margin-bottom: 15px; /* Adicione uma margem superior para o span */
+    margin-bottom: 15px; 
 }
 
 .up-i img {
-    max-width: 100%; /* Torna a imagem responsiva */
+    max-width: 100%; 
     height: auto;
     border-radius: 8px;
     margin-bottom: 12px;

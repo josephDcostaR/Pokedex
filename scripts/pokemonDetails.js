@@ -18,7 +18,6 @@ function convertPokemonToDetailsHTML(pokemon) {
                         ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                     </ol>
                 </div>
-
                 
             </div>
             <div class="down-i  ${pokemon.type}" >
@@ -31,7 +30,7 @@ function convertPokemonToDetailsHTML(pokemon) {
                             </div>
                         </div>
                     </div>
-                    <!-- Repita o mesmo padrão para as barras de status de ATK e DEF -->
+                   
                     <div class="ATK">
                         <p>ATK</p>
                         <div class="status-bar">
@@ -54,20 +53,17 @@ function convertPokemonToDetailsHTML(pokemon) {
     `;
 }
 
-// main2.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const pokemonDetailsContainer = document.getElementById('PokemonDex');
     
     if (pokemonDetailsContainer) {
-        // Obtenha o ID do Pokémon da URL
+       
         const urlParams = new URLSearchParams(window.location.search);
         const pokemonId = urlParams.get('id');
         
-        // Verifique se o ID é válido
         if (pokemonId) {
-            // Chame a função para carregar detalhes do Pokémon com base no ID
             loadPokemonDetails(pokemonId).then((pokemon) => {
-                // Converte os detalhes do Pokémon para HTML e insere no container
                 const detailsHtml = convertPokemonToDetailsHTML(pokemon);
                 pokemonDetailsContainer.innerHTML = detailsHtml;
             }).catch((error) => {
@@ -81,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Função para carregar detalhes do Pokémon com base no ID
 function loadPokemonDetails(pokemonId) {
     const pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonId}/`;
     

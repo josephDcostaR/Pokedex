@@ -30,16 +30,12 @@ function loadPokemonItens(offset, limit) {
         const newHtml = pokemons.map(convertPokemonToLi).join('');
         if (pokemonList) {
             pokemonList.innerHTML += newHtml;
-
-            // Adiciona event listener para cada elemento gerado
             const pokemonElements = document.querySelectorAll('.pokemon-link');
             pokemonElements.forEach((element) => {
                 element.addEventListener('click', (event) => {
                     event.preventDefault();
                     const pokemonId = element.closest('li').getAttribute('data-pokemon-id');
-                    // Agora você tem a ID do Pokémon clicado (pokemonId)
                     console.log('Pokemon ID:', pokemonId);
-                    // Adicione o código para navegar para a segunda página ou fazer outras operações com a ID.
                     window.location.href = `index2.html?id=${pokemonId}`;
                 });
             });
